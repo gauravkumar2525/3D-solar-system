@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma;
+  overflow: hidden;
+  color: white;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 2px 2px 10px #000;
+  z-index: 10;
+}
+
+#controls {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+label {
+  display: block;
+  margin: 5px 0 2px;
+  font-size: 0.9em;
+}
+
+input[type=range] {
+  width: 100%;
+  margin-bottom: 5px;
+  accent-color: #00f;
+}
+
+button {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  margin-left: 10px;
+  padding: 8px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  background: #ffffffcc;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+#ShowHideOrbitBtn {
+  top: 90px;
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 20;
+}
